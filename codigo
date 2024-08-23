@@ -1,0 +1,28 @@
+print("-"*50)
+print("Empresa Sonic Telecomunicações.\nSeja bem vindo")
+print("*"*50)
+
+
+consumo_mensal = float(input('Nos informe o seu consumo mensal de internet: --> '))
+
+
+def recomendar_plano(consumo_mensal):
+   # Verifica se o consumo mensal é válido
+   if consumo_mensal < 0:
+       print("Consumo inválido. Por favor, insira um valor positivo.")
+
+
+   # Verifica qual plano é adequado com base no consumo mensal
+   if consumo_mensal <= 10:
+       print("O melhor plano para você é o:\nPlano Essencial Fibra - 50Mbps")
+   elif 10 < consumo_mensal <= 20:
+       print("O melhor plano para você é o:\nPlano Prata Fibra - 100Mbps")
+   else:
+       print("O melhor plano para você é o:\nPlano Premium Fibra - 300Mbps")
+
+
+print(recomendar_plano(consumo_mensal))
+
+
+print("-"*50)
+print("A nossa equipe entrar em contato para ajudá-lo(a) a adquirir o seu novo pacote de internet.")
